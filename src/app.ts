@@ -2,6 +2,7 @@
 
 import { runAdapter } from "./adapter";
 import { runFactory } from "./factory";
+import { runSingleton } from "./singleton";
 
 (
   async () => {
@@ -16,6 +17,6 @@ import { runFactory } from "./factory";
     await runFactory();
 
     console.log("==========================");
-    // await runSingle();
+    await runSingleton();
   }
 )();
